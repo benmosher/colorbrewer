@@ -1,15 +1,16 @@
 {
-  "name": "colorbrewer2",
+  "name": "colorbrewer",
   "main": [
     "colorbrewer.js",
     "colorbrewer.css"
     ],
-  "version": "2.0",
-  "homepage": "https://github.com/alexmasselot/colorbrewer",
+  "version": "2.1",
+  "homepage": "https://github.com/benmosher/colorbrewer",
   "authors": [
-    "alexandre.masselot@gmail.com"
+    "alexandre.masselot@gmail.com",
+    "ben@answerrocket.com"
   ],
-  "description": "copy colorbrewer defintion form Cynthia Brewer by Mike Bostock",
+  "description": "Isolated copy of the colorbrewer2 JS+CSS from D3, originally by Cynthia Brewer. Adapted for Node/RequireJS(AMD)/globals use.",
   "license": "Apache-2.0",
   "ignore": [
     "**/.*",

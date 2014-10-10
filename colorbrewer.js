@@ -1,7 +1,10 @@
-// This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
-//this was copied from https://github.com/mbostock/d3/tree/master/lib/colorbrewer
-(function (window) {
-    window.colorbrewer = {YlGn: {
+// This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer2.org/).
+// this was copied from https://github.com/mbostock/d3/tree/master/lib/colorbrewer
+(function(colorbrewer) {
+    "use strict";
+
+    colorbrewer = {
+       YlGn: {
         3: ["#f7fcb9", "#addd8e", "#31a354"],
         4: ["#ffffcc", "#c2e699", "#78c679", "#238443"],
         5: ["#ffffcc", "#c2e699", "#78c679", "#31a354", "#006837"],
@@ -302,5 +305,13 @@
         11: ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5"],
         12: ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f"]
     }};
-    return window.colorbrewer;
-})(window);
+
+    // adapted from D3's AMD/node jazz.
+    if (typeof define === "function" && define.amd) {
+        define(colorbrewer);
+    } else if (typeof module === "object" && module.exports) {
+        module.exports = colorbrewer;
+    } else {
+        this.colorbrewer = colorbrewer;
+    }
+})();
