@@ -1,0 +1,23 @@
+{
+  "name": "colorbrewer",
+  "version": "2.1.0",
+  "description": "Adaptation of Cynthia Brewer's colorbrewer2.org palettes; original JS/CSS forked from the D3 project.",
+  "main": "colorbrewer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benmosher/colorbrewer.git"
+  },
+  "keywords": [
+    "colorbrewer",
+    "colorbrewer2"
+  ],
+  "author": "alexandre.masselot@gmail.com, ben@answerrocket.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/benmosher/colorbrewer/issues"
+  },
+  "homepage": "https://github.com/benmosher/colorbrewer"
+}

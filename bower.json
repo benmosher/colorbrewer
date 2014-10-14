@@ -4,7 +4,7 @@
     "colorbrewer.js",
     "colorbrewer.css"
     ],
-  "version": "2.1",
+  "version": "2.1.0",
   "homepage": "https://github.com/benmosher/colorbrewer",
   "authors": [
     "alexandre.masselot@gmail.com",
